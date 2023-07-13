@@ -1,0 +1,37 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Example API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/helloworld": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "",
+            "x-amf-mediaType": "application/json",
+            "schema": {
+              "$ref": "#/definitions/schema"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "schema": {
+      "title": "Hello world Response",
+      "example": {
+        "message": "Hello world"
+      },
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
